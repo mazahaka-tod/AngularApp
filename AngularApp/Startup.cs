@@ -20,7 +20,7 @@ namespace AngularApp
 
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/dist";
+                configuration.RootPath = "ClientApp/dist"; 
             });
         }
 
