@@ -1,0 +1,11 @@
+﻿@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+.page-header {
+    background-color: #ccc;
+    margin-top: 0px;
+    padding-top: 3px;
+}
+
+.marg-left {
+    margin-left: 50px;
+}

@@ -1,0 +1,24 @@
+﻿<div>
+    <a routerLink="/create" class="nav-link">Добавить</a>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Модель</td>
+            <td>Производитель</td>
+            <td>Цена</td>
+            <td></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let o of orders">
+            <td>{{o?.name}}</td>
+            <td>{{o?.company}}</td>
+            <td>{{o?.price}}</td>
+            <td>
+                <a [routerLink]="['edit', o.id]" class="btn btn-sm btn-primary">Изменить</a>
+                <button (click)="delete(o.id)" class="btn btn-sm btn-danger">Удалить</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

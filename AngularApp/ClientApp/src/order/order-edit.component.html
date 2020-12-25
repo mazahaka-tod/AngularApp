@@ -1,0 +1,15 @@
+﻿<div *ngIf="loaded">
+    <h2>
+        Изменение данных о заказе {{order.id}} <i>{{order.name}}</i>
+        <button mat-raised-button color="primary" (click)="onToggleMode()" *ngIf="isViewMode"><mat-icon>edit</mat-icon></button>
+        <button mat-raised-button color="primary" (click)="onGoToBack()" *ngIf="isViewMode">Go to back</button>
+        <button mat-raised-button color="primary" (click)="onSaveLead()" *ngIf="!isViewMode">Save</button>
+        <button mat-raised-button color="secondary" (click)="onCancelButtonClicked()" *ngIf="!isViewMode">Cancel</button>
+    </h2>
+
+    <order-form [(order)]="order"></order-form>
+    <div class="form-group">
+        <input type="button" value="Сохранить" (click)="save()" class="btn btn-success" />
+    </div>
+</div>
+<a routerLink="/" class="nav-link">Назад к списку заказов</a>
