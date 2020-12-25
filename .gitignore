@@ -6,3 +6,5 @@ PublishProfiles
 *.js
 *.js.map
 *.user
+*.suo
+.vs
