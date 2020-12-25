@@ -8,3 +8,4 @@ PublishProfiles
 *.user
 *.suo
 .vs
+.vs/AngularApp
