@@ -7,23 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="ClientApp\dist\**" />
     <Content Remove="$(SpaRoot)**" />
-    <Content Remove="ClientApp\dist\**" />
-    <EmbeddedResource Remove="ClientApp\dist\**" />
     <None Remove="$(SpaRoot)**" />
-    <None Remove="ClientApp\dist\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\dist\index.html" />
-    <None Remove="ClientApp\dist\main-es2015.65357fa6db3d97e276b1.js" />
-    <None Remove="ClientApp\dist\main-es5.65357fa6db3d97e276b1.js" />
-    <None Remove="ClientApp\dist\polyfills-es2015.230c39ef072c1973c178.js" />
-    <None Remove="ClientApp\dist\polyfills-es5.dc0224cbf9c07477ffa4.js" />
-    <None Remove="ClientApp\dist\runtime-es2015.1f7caece0e9c96a3d9fe.js" />
-    <None Remove="ClientApp\dist\runtime-es5.1f7caece0e9c96a3d9fe.js" />
     <None Remove="ClientApp\src\app\data.service.ts" />
     <None Remove="ClientApp\src\app\not-found.component.ts" />
     <None Remove="ClientApp\src\app\order-create.component.ts" />
